@@ -13,7 +13,7 @@ export default function AddCategory({onNewCategory}) {
     /* envia lo que se escribe en el input */
     const onSubmit = (event) => {
         event.preventDefault()
-    /* Deja enviar lo escrito a solo se escribe más de una letra */
+    /* Deja enviar lo escrito si solo se escribe más de una letra */
         if (inputValue.trim().length <= 1) return;
     /* Agrega lo escrito a la lista */
         /* setCategories( categories=> [inputValue, ... categories]) */
